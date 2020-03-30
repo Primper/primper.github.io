@@ -14,7 +14,7 @@
             <li id="ru_click" class="button_lang current_lang">Русский</li>
         </ul>
 
-        <!-- Theme swith -->
+        <!-- Theme switch checkbox -->
         <div class="theme-switch-blank">
             <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
@@ -32,7 +32,7 @@
         <!-- C S S   S T Y L E -->
         <style type = "text/css">
 
-        /* MAIN */
+        /* MAIN Style */
         body
         {
             text-align: center;
@@ -43,21 +43,21 @@
             background-color: var(--bg-color);
         }
 
-        h1
+        h1 /* TITLE OF PAGE */
         {
             font-family: Neucha;
             font-size: 55px; 
             text-align: center;
         }
 
-        p
+        p /* Description under TITLE */
         {
             font-family: Neucha;
             font-size: 25px; 
             text-align: center;
         }
 
-        .text
+        .text /* Text input box */
         {
             text-align: left;
             height: 80%;
@@ -67,9 +67,11 @@
             border-radius: 4px;
             border: solid;
             border-width: 2px;
+            
             -webkit-box-shadow: 8px 12px 11px 2px rgba(0,0,0,0.75);
             -moz-box-shadow: 8px 12px 11px 2px rgba(0,0,0,0.75);
             box-shadow: 8px 12px 11px 2px rgba(0,0,0,0.75);
+
             color: var(--font-color);
             background-color: var(--bg-input-color);
         }
@@ -77,14 +79,14 @@
 
 
          /* Theme palettes */
-        :root
+        :root /* White Theme */
         {
             --font-color: rgb(66, 66, 66);
             --bg-color: rgb(255, 255, 255);
             --bg-input-color: rgb(255, 255, 255);
         }
 
-        [data-theme="dark"]
+        [data-theme="dark"] /* Dark Theme */
         {
             --font-color: rgb(255, 255, 255);
             --bg-color: rgb(24, 24, 24);
@@ -99,14 +101,14 @@
             position:relative; 
         }
 
-        em 
+        em /* Dark mode TEXT */
         {
             font-family: Neucha;
             text-align: right;
             font-size: 20px;
         }
 
-        .theme-switch 
+        .theme-switch /* Theme switch checkbox general settings */
         {
             display: inline-block;
             height: 34px;
@@ -119,7 +121,7 @@
             display:none;
         }
 
-        .slider 
+        .slider /* Slider on theme switch checkbox  */
         {
             background-color: #ccc;
             bottom: 0;
@@ -131,7 +133,7 @@
             transition: .4s;
         }
 
-        .slider:before 
+        .slider:before  /* Switch-block on slider */
         {
             background-color: #fff;
             bottom: 4px;
@@ -143,22 +145,22 @@
             width: 26px;
         }
 
-        input:checked + .slider 
+        input:checked + .slider /* Change background-color on slider after TAP on it */
         {
             background-color: #37294d;
         }
 
-        input:checked + .slider:before 
+        input:checked + .slider:before /* Change block location on slider after TAP on it */
         {
             transform: translateX(26px);
         }
 
-        .slider.round 
+        .slider.round /* Slider shape */
         {
             border-radius: 5px;
         }
 
-        .slider.round:before 
+        .slider.round:before /* Slider shape after TAP on it */
         {
             border-radius: 5px;
         }
@@ -171,7 +173,7 @@
             display: none;
         }
 
-        .button_lang 
+        .button_lang /* Change LANGUAGE button */
         {
             background-color: rgb(46, 46, 46);
             color: rgb(255, 255, 255);
@@ -185,7 +187,7 @@
             transition: background-color .3s ease-in-out;
         }
 
-        .button_lang:hover, .current_lang 
+        .button_lang:hover, .current_lang /* Change LANGUAGE button on HOVER on it */
         {
             background-color: rgb(131, 131, 131);   
             -webkit-transition: background-color .3s ease-in-out;
@@ -195,7 +197,7 @@
             transition: background-color .3s ease-in-out;
         }
 
-        ul li 
+        ul li /* Table with list of language-change buttons */
         {
             display: inline;
         }
@@ -230,7 +232,7 @@
         </style>
     </head>
     <body>
-        <script type="text/javascript" src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script> <!-- Yandex spelling corrector API -->>
         <script type = "text/javascript" src = "script.js"></script>
         <script type = "text/javascript" src = "localization.js"></script>
         <script type ="text/javascript" src = "themes.js"></script>
