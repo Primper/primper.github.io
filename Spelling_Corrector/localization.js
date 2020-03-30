@@ -15,7 +15,7 @@ var english = document.getElementById('en_click'),
         language(russian,english);
     }, false);
     
-function language(languageOn,languageOff)
+function language(languageOn,languageOff) // Function of change language
 {
     if (!languageOn.classList.contains('current_lang')) 
     {
