@@ -1,0 +1,129 @@
+html
+{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(60,9,121,1) 0%, rgba(108,0,255,1) 100%);
+}
+
+.box
+{
+    width: 300px;
+    padding: 50px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    text-align: center;
+    border-radius: 13px;
+    box-shadow: 0 0 30px 5px rgb(0, 0, 0, 0.5);
+}
+
+.box h1 /* "Welcome Back" text */
+{
+    color: black;
+    font-size: 25px;
+
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.box input[type = "text"],.box input[type = "password"] /* "Username & Password" input box */
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 12px auto;
+    text-align: left;
+    padding: 12px 0 12px 50px;
+    width: 250px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 13px;
+    transition: 0.3s;
+    background-color: rgb(230, 230, 230);
+}
+
+.box input[type = "submit"],.box input[type = "login"] /* "Submit" button */
+{
+    border: 0;
+    display: block;
+    margin: 18px auto;
+    padding: 12px 15px;
+    width: 230px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    transition: 0.3s;
+    text-transform: uppercase;
+
+    background-color:  rgb(93, 0, 223);
+    transition: background-color .5s ease;
+}
+
+.box input:hover[type = "submit"],.box input:hover[type = "login"]
+{
+    cursor: pointer;
+    background-color: rgb(66, 14, 131);
+    transition: background-color .5s ease;
+}
+
+.box a /* "Forgot Password" & "Create New Account" text */
+{
+    background: none;
+    display: block;
+    margin: 5px auto;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.63);
+    font-size: 14px;
+
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -khtml-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.box a:hover
+{
+    background: none;
+    display: block;
+    margin: 5px auto;
+    text-decoration: none;
+    color: rgb(62, 14, 139);
+    font-size: 14px;
+
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -khtml-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+}
+
+.customicon /* Icons */
+{
+    position: absolute;
+    margin: -145px;
+    margin-top: 1px;
+    width: 44px;
+    height: 36px;
+    padding-top: 7px;
+
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
