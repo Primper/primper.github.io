@@ -544,20 +544,6 @@ body {
     font-weight: bold;
 }
 
-.bottom_logo {
-    width: 50%;
-    position: relative;
-    font-size: 46px;
-}
-
-.bottom_logo ion-icon{
-    float:right;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 9px;
-}
-
 /* ALL COLORS */
 
 .navbar_logo a:hover,
@@ -1238,20 +1224,6 @@ body {
         display: block;
     }
 
-    .bottom_logo {
-        width: 10%;
-        position: relative;
-        font-size: 46px;
-    }
-    
-    .bottom_logo ion-icon {
-        float: right;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin-bottom: 9px;
-    }
-
     .bottom_left {
         font-size: 18px;
         width: 100%;
@@ -1399,20 +1371,6 @@ body {
 
     #hamburger-icon {
         display: block;
-    }
-
-    .bottom_logo {
-        width: 10%;
-        position: relative;
-        font-size: 46px;
-    }
-
-    .bottom_logo ion-icon {
-        float: right;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin-bottom: 9px;
     }
 
     .bottom_left {
@@ -1564,30 +1522,8 @@ body {
         display: block;
     }
 
-    .bottom_logo {
-        display: none;
-    }
-
-    .bottom_logo ion-icon {
-        float: right;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin-bottom: 9px;
-    }
-
     .bottom_left {
         font-size: 14px;
         width: 100%;
     }
 }
-
-/* THIS IS RESPONSIVE 
-@media screen and (max-width: 1024px) {
-    .nav-item {
-            text-decoration: none;
-            font-size: 5px;
-            color: white;
-            margin: 0 5%;
-        }
-} */
