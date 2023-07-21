@@ -1,0 +1,120 @@
+/* =========================== */
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100%;
+    margin: auto;
+    max-width: 1150px;
+}
+
+.footer__wrapper{
+    max-width: 1150px;
+    margin: auto;
+}
+
+.main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--text-color);
+
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+
+    min-width: 1000px; /* DELETE THIS BEFORE ADAPTIVE */ 
+}
+/* =========================== */
+
+/* =========================== */
+/* Selector                    */
+/* =========================== */
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+
+/* ------------> MOBILE <------------ */
+@media (min-width: 250px) {
+    [class*="__container"] {
+        max-width: 90vw;
+    }
+
+    .wrapper{
+        overflow: hidden;
+    }
+}
+
+/* ------------> TABLET <------------ */
+@media (min-width: 720px) {
+    [class*="__container"] {
+        max-width: 85vw;
+    }
+
+    .wrapper{
+        overflow: hidden;
+    }
+}
+
+/* ------------> PC <------------ */
+@media (min-width: 1100px) {
+    [class*="__container"] {
+        max-width: 80vw;
+    }
+
+    .wrapper{
+        overflow: visible;
+    }
+}
+
+/* ================================================================== */
+/*                                                                    */
+/*                                                                    */
+/* F O N T S                                                          */
+/*                                                                    */
+/*                                                                    */
+/* ================================================================== */
+
+:root { font-family: 'Inter', sans-serif;}
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+@font-face {
+    font-family: 'wadikbold';
+    src: url('/fonts/wadik/wadik-webfont.woff2') format('woff2'),
+         url('/fonts/wadik/wadik-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ================================================================== */
+/*                                                                    */
+/*                                                                    */
+/* C O L O R - S C H E M E S                                          */
+/*                                                                    */
+/*                                                                    */
+/* ================================================================== */
+
+:root {
+    --bg-color: #000;
+    --text-color: #ffffff;
+    --border-color: #ffffff;
+}
