@@ -99,8 +99,8 @@ body {
 
 @font-face {
     font-family: 'wadikbold';
-    src: url('fonts/wadik/wadik-webfont.woff2') format('woff2'),
-         url('fonts/wadik/wadik-webfont.woff2') format('woff');
+    src: url('/LEVEL_Website/fonts/wadik/wadik-webfont.woff2') format('woff2'),
+         url('/LEVEL_Website/fonts/wadik/wadik-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
