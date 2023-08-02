@@ -19,4 +19,21 @@ const swiper = new Swiper('.swiper', {
         slideShadows: true,
       },
       spaceBetween: 80,
+      breakpoints: {
+        250: {
+          coverflowEffect: {
+            stretch: 10,
+          },
+        },
+        720: {
+            coverflowEffect: {
+              stretch: 0,
+            },
+        },
+        1100: {
+          coverflowEffect: {
+            stretch: 0,
+          },
+      },
+    }
 });

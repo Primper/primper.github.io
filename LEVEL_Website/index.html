@@ -2,8 +2,7 @@
 <html lang="EN">
     <head>
         <meta charset="UTF-8">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
-        <meta name="viewport" content="width=1000">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <title>LEVEL</title>
         <!-- <link rel="icon" type="image/x-icon" href="/ico/favicon.ico"> ////////////// NEED ADD LOGO ICON-->
         <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
@@ -11,8 +10,11 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="preconnect" href="https://rsms.me/" as="font">
-        <link rel="preconnect" href="fonts/wadik/wadik-webfont.woff" as="font">
-        <link rel="preconnect" href="fonts/wadik/wadik-webfont.woff2" as="font">
+        <link rel="preconnect" href="/fonts/wadik/wadik-webfont.woff" as="font">
+        <link rel="preconnect" href="/fonts/wadik/wadik-webfont.woff2" as="font">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     </head>
     <body id="body_id">
@@ -36,13 +38,31 @@
                             </ul>
                         </nav> 
                     </div>
-                    <!-- <div class="header__burger">
-                        <div class="burger__menu" id="burger__menu_ID">
-                            <div id="burger__menu_bar1" class="burger__menu_bar"></div>
-                            <div id="burger__menu_bar2" class="burger__menu_bar"></div>
-                            <div id="burger__menu_bar3" class="burger__menu_bar"></div>
+                    <div class="header__accordion__block">
+                        <div class="header__accordion__block_head" id="header__accordion__block_head_ID">
+                            <a class="menu__logo"><img src="img/logo.png" draggable="false"></a>
+                            <div class="burger__menu_block">
+                                <div class="burger__menu" id="burger__menu_ID">
+                                    <div id="burger__menu_bar1" class="burger__menu_bar"></div>
+                                    <div id="burger__menu_bar2" class="burger__menu_bar"></div>
+                                    <div id="burger__menu_bar3" class="burger__menu_bar"></div>
+                                </div>
+                                <h1 class="block-text__title text__title_burger">MENU</h1>
+                            </div>
                         </div>
-                    </div> -->
+                        <div class="header__accordion__block_content" id="header__accordion_content">
+                            <div id="menu__mobile" class="menu__body_mobile">
+                                <ul class="menu__list_mobile">
+                                    <li class="menu__item_mobile"><a href="#about" class="menu__link_mobile" draggable="false">About Us</a></li>
+                                    <li class="menu__item_mobile"><a href="#esports" class="menu__link_mobile" draggable="false">Esports</a></li>
+                                    <li class="menu__item_mobile"><a href="#price"  class="menu__link_mobile" draggable="false">Price</a></li>
+                                    <li class="menu__item_mobile"><a href="#lounge" class="menu__link_mobile" draggable="false">Lounge Bar</a></li>
+                                    <li class="menu__item_mobile"><a href="#gallery" class="menu__link_mobile" draggable="false">Gallery</a></li>
+                                    <li class="menu__item_mobile"><a href="#contacts" class="menu__link_mobile" draggable="false">Contacts</a></li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </div>
                 </div>
             </header>
             <main class="main">
@@ -53,20 +73,23 @@
                         <div class="blur-circle__pink section1_blur-circle3"></div>
                         <div class="blur-circle__pink section1_blur-circle4"></div>
                         <div class="blur-circle__green section1_blur-circle5"></div>
+                        <div class="blur-circle__violet section1_mobile_blur-circle1"></div>
+                        <div class="blur-circle__green section1_mobile_blur-circle2"></div>
+                        <div class="blur-circle__pink section1_mobile_blur-circle3"></div>
                         <div class="section1__content">
-                            <h1 class="block-text__title text__title_section1">Rent Gaming PC <br>from €5/hour</h1>
+                            <h1 class="block-text__title text__title_section1">Rent Gaming PC <br>from <span class="specific_symbol">€</span>5/hour</h1>
                             <a class="block-text__text text__text_section1">LEVEL - is a premium 4K game room. 
                                 <br>We meticulously created this place leaving 
                                 <br>no details to satisfy the needs of everyone 
                                 <br>who truly loves computer games.</a>
                             <div class="block-buttons block-buttons_section1">
-                                <a class="block-text__button" id="playbtn">Play</a>
+                                <a class="block-text__button" href="">Play</a>
                             </div>
                         </div>
                         <div class="section1__image"><img src="img/gamepad.png" draggable="false"></div>
                     </div>
                 </section>
-                <section class="section2">
+                <section class="section2" id="about">
                     <div class="section2__container">
                         <div class="section2__accordion__block">
                             <div class="section2__accordion__block_head">
@@ -74,7 +97,7 @@
                                 <div class="section2__accordion__block_image"><img src="img/pc_gaming_room.png" draggable="false"></div>
                             </div>
                             <div class="section2__accordion__block_content" id="section2__accordion_content_ID1">
-                                <a class="block-text__text text__text_section2">10 modern gaming PCs based on the INTEL®️ Core™️ i7 processor and GeForce RTX 4080 graphics cards that allow you to enjoy all the latest video games in the best resolution Paired with Samsung Odyssey OLED G8 monitor with 240Hz refresh rate. Fantastic HDR performance giving all the benefits of 4K gaming. Secretlab Titan EVO chairs for the most comfortable gaming experience Also, the PlayStation 5 console along with the SAMSUNG Neo QLED 8K ultra-thin frameless TV.</a>
+                                <a class="block-text__text text__text_section2">10 modern gaming PCs based on the INTEL® Core™ i7 processor and GeForce RTX 4080 graphics cards that allow you to enjoy all the latest video games in the best resolution Paired with Samsung Odyssey OLED G8 monitor with 240Hz refresh rate. Fantastic HDR performance giving all the benefits of 4K gaming. Secretlab Titan EVO chairs for the most comfortable gaming experience Also, the PlayStation 5 console along with the SAMSUNG Neo QLED 8K ultra-thin frameless TV.</a>
                             </div>
                         </div>
                         <div class="section2__accordion__block">
@@ -84,7 +107,7 @@
                             </div>
                             <div class="section2__accordion__block_content" id="section2__accordion_content_ID2">
                                 <a class="block-text__text text__text_section2">Our space VIP room is equipped with the best gaming sets at the moment. 
-                                    The Samsung Gaming Odyssey Ark 4K ultra-thin 55" monitor paired with an INTEL®️ Core™️ i9 gaming build and GeForce RTX 4090 graphics card for maximum performance and a great gaming experience. And incredibly comfortable gaming chairs Secretlab Titan Lamborghini Also ultra-thin 8K Smart QLED Samsung TV 65” along with PlayStation 5 
+                                    The Samsung Gaming Odyssey Ark 4K ultra-thin 55" monitor paired with an INTEL® Core™ i9 gaming build and GeForce RTX 4090 graphics card for maximum performance and a great gaming experience. And incredibly comfortable gaming chairs Secretlab Titan Lamborghini Also ultra-thin 8K Smart QLED Samsung TV 65” along with PlayStation 5 
                                     and X-Box One X.</a>
                             </div>
                         </div>
@@ -98,7 +121,12 @@
                         </div>
                     </div>
                 </section>
-                <section class="section3">
+                <section class="section3" id="esports">
+                    <div class="section3__mobile_bg">
+                        <svg viewBox="0 0 390 1000" height="100%" width="100%" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                            <path d="M-3 23.8657C32.4955 11.3884 120.829 -9.82296 190.197 5.1498C276.907 23.8657 318.488 20.3249 391 5.1498V938.924C358.04 953.087 309.867 958.145 200.846 953.087C106.919 948.729 75.0901 939.429 -3 953.087V23.8657Z" fill="#F259F5" fill-opacity="0.2"/>
+                          </svg>
+                    </div>
                     <div class="section3__container">
                         <h1 class="block-text__title text__title_section3">LEVEL - is a premium <br><span>4K game room.</span></h1>
                         <div class="section3__content">
@@ -111,7 +139,7 @@
                                     <p>For such people, we have a particularly unique offer, the so-called "Level Card", which allows you to train at any convenient time for you or your cyber team. Your game - Your rules! Be on the Level!</p>
                                 </a>  
                                 <div class="block-buttons block-buttons_section3">
-                                    <a class="block-text__button">Play</a>
+                                    <a class="block-text__button" href="">Play</a>
                                 </div>                                  
                             </div>
                         </div>
@@ -121,8 +149,10 @@
                     <div class="section4__container">
                         <div class="blur-circle__green section4_blur-circle1"></div>
                         <div class="blur-circle__violet section4_blur-circle2"></div>
+                        <div class="blur-circle__green section4_mobile_blur-circle1"></div>
+                        <div class="blur-circle__violet section4_mobile_blur-circle2"></div>
                         <h1 class="block-text__title text__title_section4">Membership</h1>
-                        <a class="block-text__text">Welcome to our exclusive computer club!
+                        <a class="block-text__text text__text_section4">Welcome to our exclusive computer club!
                             <br>The €200 membership fee serves as a deposit, securing your place. <br>Join now and unlock endless possibilities!</a>
                         <div class="section4__block_content">
                             <div class="section4__content_item">
@@ -136,7 +166,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section5">
+                <section class="section5" id="price">
                     <div class="section5__container">
                         <div class="blur-circle__pink section5_blur-circle"></div>
                         <div class="section5__accordion__block">
@@ -210,15 +240,18 @@
                                     <br><span>VIP PC Weekend</span> - 20€/hour
                                     <br>Period: default
                                     <br>Minimum payment: 10€
-                                    <br>Minimum session time: 30 minutes</a>
+                                    <br>Minimum session time: 30 minutes
+                                </a>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="section6">
+                <section class="section6" id="lounge">
                     <div class="section6__container">
                         <div class="section6__block">
-                            <div class="section6__image"><img src="img/bar1.png" draggable="false"></div>
+                            <div class="section6__image">
+                                <img class="section6__main_image" src="img/bar1.png" draggable="false">
+                            </div>
                             <div class="section6__block_content">
                                 <h1 class="block-text__title text__title_section6">futuristic bar</h1>
                                 <a class="block-text__text text__text_section6"><p>The art of the best bartenders and the precision of technology.</p>
@@ -233,19 +266,26 @@
                                 <a class="block-text__text text__text_section6"><p>Discover a culinary oasis in the heart of Milan, where European and Russian flavors unite.</p>
                                     <p>Our restaurant offers a tantalizing blend of traditional Russian dishes and exquisite European cuisine. Indulge in a symphony of flavors as you savor classics like borscht and beef Stroganoff, alongside delectable French pastries and Italian delicacies. Immerse yourself in a charming ambiance that seamlessly fuses Russian elegance with European chic. Whether you're seeking a romantic dinner or a gathering with friends, our restaurant promises an unforgettable dining experience.</p></a>
                             </div>
-                            <div class="section6__image"><img src="img/bar2.png" draggable="false"></div>
+                            <div class="section6__image">
+                                <div class="section6__image_logo"><img src="img/logo2.png" draggable="false"></div>
+                                <img class="section6__main_image" src="img/bar2.png" draggable="false">
+                            </div>
                         </div>
                         <div class="section6__block">
-                            <div class="section6__image"><img src="img/bar3.png" draggable="false"></div>
+                            <div class="section6__image">
+                                <div class="section6__image_logo"><img src="img/logo3.png" draggable="false"></div>
+                                <img class="section6__main_image" src="img/bar3.png" draggable="false">
+                            </div>
                             <div class="section6__block_content">
                                 <h1 class="block-text__title text__title_section6">shisha by <br>SmokeOne</h1>
-                                <a class="block-text__text text__text_section6"><p>Experience the ultimate shisha indulgence in Milan.</p>
-                                    <p>Our exclusive hookah service offers a vast selection of flavors and premium, handcrafted hookahs. Relax in style and enjoy your time with friends.</p></a>
+                                <a class="block-text__text text__text_section6"><p>Indulge in the epitome of luxury as you recline in our stylish and comfortable lounge area, designed to create the perfect ambiance for relaxation and socializing. Our exclusive hookah service offers a vast selection of flavors. 
+                                    In addition to our exquisite hookah offerings, we pride ourselves on serving only premium, handcrafted hookahs, meticulously designed to elevate your experience. Whether you're seeking 
+                                    a quiet escape or a vibrant gathering with friends, our bar is the ideal destination to unwind and share moments of joy.</p></a>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="section7">
+                <section class="section7" id="gallery">
                     <div class="section7__container">
                         <div class="blur-circle__green section7_blur-circle1"></div>
                         <div class="blur-circle__pink section7_blur-circle2"></div>
@@ -263,25 +303,25 @@
                 </section>
             </main>
         </div>
-        <footer class="footer">
+        <footer class="footer" id="contacts">
             <div class="footer__wrapper">
                 <div class="footer__container">
                     <div class="footer__block1">
                         <a class="footer__logo"><img src="img/logo.png" draggable="false"></a>
-                        <a class="block-text__text text__text_footer">Thank you for visiting our website! 
+                        <a class="block-text__text text__text_footer text__text_footer_block1">Thank you for visiting our website! 
                             <br>We would love to hear from you.
                         </a>
                         <a href="" class="block-text__text text__text_footer text__footer_block1_policy">Privacy policy</a>
                     </div>
                     <div class="footer__block2">
                         <h1 class="block-text__title text__title_footer">Contacts</h1>
-                        <a href="tel:+0000000000" class="block-text__text text__text_footer">+0 000 00 00 00</a>
+                        <a href="tel:+393248713063" class="block-text__text text__text_footer">+39 324 871 30 63</a>
                         <a class="block-text__text text__text_footer">Corso Como 9, Milan</a>
                     </div>
                     <div class="footer__block3">
                         <a class="block-text__text text__text_footer text__footer_block3">We work seven days a week <br>from 14:00 till 4:00</a>
                         <div class="footer__social_block">
-                            <a href="" class="footer__social_item">
+                            <a href="https://instagram.com/level.milano" class="footer__social_item">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="24" cy="24" r="24" fill="url(#paint0_linear_657_92)"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M24 8C19.6547 8 19.1098 8.01842 17.4032 8.09628C15.7002 8.17396 14.5371 8.44446 13.5194 8.84001C12.4673 9.24884 11.575 9.79593 10.6854 10.6854C9.79593 11.575 9.24884 12.4673 8.84001 13.5194C8.44446 14.5371 8.17396 15.7002 8.09628 17.4032C8.01842 19.1098 8 19.6547 8 24C8 28.3453 8.01842 28.8902 8.09628 30.5968C8.17396 32.2998 8.44446 33.4629 8.84001 34.4806C9.24884 35.5327 9.79593 36.425 10.6854 37.3146C11.575 38.2041 12.4673 38.7512 13.5194 39.1601C14.5371 39.5555 15.7002 39.826 17.4032 39.9037C19.1098 39.9816 19.6547 40 24 40C28.3453 40 28.8902 39.9816 30.5968 39.9037C32.2998 39.826 33.4629 39.5555 34.4806 39.1601C35.5327 38.7512 36.425 38.2041 37.3146 37.3146C38.2041 36.425 38.7512 35.5327 39.1601 34.4806C39.5555 33.4629 39.826 32.2998 39.9037 30.5968C39.9816 28.8902 40 28.3453 40 24C40 19.6547 39.9816 19.1098 39.9037 17.4032C39.826 15.7002 39.5555 14.5371 39.1601 13.5194C38.7512 12.4673 38.2041 11.575 37.3146 10.6854C36.425 9.79593 35.5327 9.24884 34.4806 8.84001C33.4629 8.44446 32.2998 8.17396 30.5968 8.09628C28.8902 8.01842 28.3453 8 24 8ZM24 10.8829C28.2722 10.8829 28.7782 10.8992 30.4654 10.9762C32.0254 11.0473 32.8725 11.308 33.4363 11.5271C34.1832 11.8173 34.7162 12.164 35.276 12.724C35.836 13.2838 36.1827 13.8168 36.4729 14.5637C36.692 15.1275 36.9527 15.9746 37.0238 17.5346C37.1008 19.2218 37.1171 19.7278 37.1171 24C37.1171 28.2722 37.1008 28.7782 37.0238 30.4654C36.9527 32.0254 36.692 32.8725 36.4729 33.4363C36.1827 34.1832 35.836 34.7162 35.276 35.276C34.7162 35.836 34.1832 36.1827 33.4363 36.4729C32.8725 36.692 32.0254 36.9527 30.4654 37.0238C28.7785 37.1008 28.2725 37.1171 24 37.1171C19.7275 37.1171 19.2216 37.1008 17.5346 37.0238C15.9746 36.9527 15.1275 36.692 14.5637 36.4729C13.8168 36.1827 13.2838 35.836 12.724 35.276C12.1641 34.7162 11.8173 34.1832 11.5271 33.4363C11.308 32.8725 11.0473 32.0254 10.9762 30.4654C10.8992 28.7782 10.8829 28.2722 10.8829 24C10.8829 19.7278 10.8992 19.2218 10.9762 17.5346C11.0473 15.9746 11.308 15.1275 11.5271 14.5637C11.8173 13.8168 12.164 13.2838 12.724 12.724C13.2838 12.164 13.8168 11.8173 14.5637 11.5271C15.1275 11.308 15.9746 11.0473 17.5346 10.9762C19.2218 10.8992 19.7278 10.8829 24 10.8829Z" fill="white"/>
@@ -296,7 +336,7 @@
                                     </defs>
                                 </svg>
                             </a>
-                            <a href="" class="footer__social_item">
+                            <a href="https://t.me/level_milano" class="footer__social_item">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="24" cy="24" r="24" fill="url(#paint0_linear_657_102)"/>
                                     <path d="M10.7874 24.0404C17.7667 21.0768 22.4206 19.123 24.7493 18.179C31.3979 15.4838 32.7795 15.0156 33.68 15.0002C33.878 14.9968 34.3208 15.0446 34.6077 15.2714C34.8499 15.463 34.9165 15.7217 34.9484 15.9033C34.9803 16.0849 35.02 16.4986 34.9884 16.8219C34.6281 20.5114 33.0692 29.465 32.276 33.5974C31.9404 35.3459 31.2796 35.9322 30.6399 35.9896C29.2496 36.1143 28.1938 35.0941 26.8473 34.2338C24.7401 32.8876 23.5498 32.0496 21.5044 30.736C19.1407 29.2179 20.673 28.3835 22.0201 27.0199C22.3726 26.663 28.4983 21.2326 28.6169 20.74C28.6317 20.6784 28.6455 20.4488 28.5055 20.3275C28.3655 20.2062 28.1589 20.2477 28.0098 20.2807C27.7985 20.3274 24.4323 22.4958 17.9113 26.786C16.9558 27.4254 16.0904 27.737 15.315 27.7206C14.4602 27.7026 12.8159 27.2496 11.5935 26.8623C10.0942 26.3873 8.90254 26.1362 9.0063 25.3295C9.06035 24.9093 9.65403 24.4796 10.7874 24.0404Z" fill="white"/>
@@ -309,25 +349,15 @@
                                 </svg>
                             </a>
                         </div>
+                        <a class="footer__logo"><img src="img/logo.png" draggable="false"></a>
                     </div>
                 </div>
             </div>
         </footer>
-        <dialog class="modal__contact" id="modal_contact_ID">
-            <div class="modal__contact_block" id="modal__contact_block_ID">
-                <div class="modal__contact_content">
-                    <h1 class="block-text__title text__title_modal">Contact Us</h1>
-                    <form action="">
-                        <input type="text" id="form_name_ID" name="firstname" placeholder="Name">
-                        <input type="tel" id="form_phone_ID" name="phone_number" placeholder="Phone number">
-                        <input type="submit" value="Send">
-                    </form>
-                </div>
-            </div>
-        </dialog>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <script src="js/accordion.js"></script>
-        <script src="js/swiper_system.js"></script>
-        <script src="js/contact_form.js"></script>
+        <script src="/js/accordion.js"></script>
+        <script src="/js/swiper_system.js"></script>
+        <script src="/js/burger_menu.js"></script>
+        <script src="/js/smooth_scroll.js"></script>
     </body>
 </html>
